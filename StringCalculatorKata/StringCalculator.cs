@@ -1,12 +1,12 @@
-﻿using System;
-
-namespace StringCalculatorKata
+﻿namespace StringCalculatorKata
 {
     public class StringCalculator
     {
         public int Add(string v)
         {
-            return 0;
+            if (v == "")
+                return 0;
+            return int.Parse(v);
         }
     }
 }
